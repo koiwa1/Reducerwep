@@ -1,24 +1,15 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import Counter from './Counter';
 
-class App extends Component {
 
-    static defaultProps={
 
- };
-
-render() {
-     return (
-        <div>
-                this.name
+export default class App extends Component {
+    render() {
+        return (
+            <div>
+                <Counter/>
+               
             </div>
-        );
+        )
     }
 }
-
-App.propTypes = {
-            name:PropTypes.number
-            word:PropTypes.name.isRequired
-            };
-
-export default App;
